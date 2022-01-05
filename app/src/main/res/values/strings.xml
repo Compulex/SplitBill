@@ -5,10 +5,12 @@
     <string name="tip">Tip: </string>
     <string name="placeholder_tip">15</string>
     <string name="percent_sign">%</string>
-    <string name="ppl">Number of Occupants: </string>
+    <string name="ppl">Number of People: </string>
     <string name="placeholder_ppl">2</string>
     <string name="calc_btn">Calculate</string>
     <string name="receipt"><u>Your Receipt</u></string>
-    <string name="bill">Bill: </string>
+    <string name="subtotal">Subtotal: </string>
     <string name="total"><b>Total: </b></string>
+    <string name="per">Per Person </string>
+
 </resources>

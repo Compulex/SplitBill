@@ -58,6 +58,7 @@
             android:textSize="25sp"/>
     </TableRow>
 
+    <!--Number of people-->
     <TableRow
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -94,10 +95,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="40sp"
+        android:layout_marginTop="30dp"
         android:text="@string/receipt"
         android:textSize="40sp"/>
 
+    <!--Subtotal-->
     <TableRow
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -108,17 +110,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/bill"
+            android:text="@string/subtotal"
             android:textSize="25sp"/>
 
         <TextView
-            android:id="@+id/bill"
+            android:id="@+id/subtotal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:textSize="25sp"/>
     </TableRow>
 
+    <!--Tip-->
     <TableRow
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -140,6 +143,7 @@
             android:textSize="25sp"/>
     </TableRow>
 
+    <!--Total-->
     <TableRow
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -160,4 +164,71 @@
             android:layout_gravity="center"
             android:textSize="25sp"/>
     </TableRow>
+
+    <!--Per person-->
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/per"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:id="@+id/num_ppl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20sp"/>
+    </TableRow>
+
+    <!--Tip Each-->
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/tip"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:id="@+id/tip_each"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="25sp"/>
+    </TableRow>
+
+    <!--Total Each-->
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/total"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:id="@+id/total_each"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="25sp"/>
+    </TableRow>
+
 </LinearLayout>
