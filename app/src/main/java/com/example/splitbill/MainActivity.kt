@@ -7,7 +7,6 @@ import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import kotlin.math.round
 
 class MainActivity : AppCompatActivity() {
     private lateinit var subtotal : EditText
