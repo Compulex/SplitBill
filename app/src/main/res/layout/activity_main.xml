@@ -22,7 +22,7 @@
             android:textSize="25sp" />
 
         <EditText
-            android:id="@+id/total"
+            android:id="@+id/subtotal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -111,10 +111,12 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@string/subtotal"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
             android:textSize="25sp"/>
 
         <TextView
-            android:id="@+id/subtotal"
+            android:id="@+id/subtotal_show"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -133,10 +135,12 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@string/tip"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
             android:textSize="25sp"/>
 
         <TextView
-            android:id="@+id/tip_total"
+            android:id="@+id/tip_show"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -184,7 +188,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:textSize="20sp"/>
+            android:textSize="25sp"/>
     </TableRow>
 
     <!--Tip Each-->
@@ -199,6 +203,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@string/tip"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
             android:textSize="25sp"/>
 
         <TextView
