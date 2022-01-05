@@ -3,6 +3,7 @@ package com.example.splitbill
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -19,6 +20,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var pplNum : TextView
     private lateinit var tipEach : TextView
     private lateinit var totalEach : TextView
+    private lateinit var clearBtn : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,15 +32,29 @@ class MainActivity : AppCompatActivity() {
         tipPercent = findViewById(R.id.tip_percent)
         ppl = findViewById(R.id.ppl_num)
         calcBtn = findViewById(R.id.calc_button)
-        //show
+        //outputs
         subtotalTV = findViewById(R.id.subtotal_show)
         tipTV = findViewById(R.id.tip_show)
         totalTV = findViewById(R.id.grand_total)
         pplNum = findViewById(R.id.num_ppl)
         tipEach = findViewById(R.id.tip_each)
         totalEach = findViewById(R.id.total_each)
+        clearBtn = findViewById(R.id.clear_button)
 
         calcBtn.setOnClickListener { calculate() }
+        clearBtn.setOnClickListener {
+            //clear all
+            subtotal.setText("")
+            tipPercent.setText("")
+            ppl.setText("")
+
+            subtotalTV.text = ""
+            tipTV.text = ""
+            totalTV.text = ""
+            pplNum.text = ""
+            tipEach.text = ""
+            totalEach.text = ""
+        }
     }
 
     private fun calculate(){
@@ -68,5 +84,7 @@ class MainActivity : AppCompatActivity() {
         tipEach.text = String.format("%.2f", eTip)
         totalEach.text = String.format("%.2f", eTotal)
 
-    }
+        //show clear button
+        clearBtn.visibility = View.VISIBLE
+    }//calculate
 }
