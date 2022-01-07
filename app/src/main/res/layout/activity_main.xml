@@ -89,153 +89,164 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
         android:text="@string/calc_btn"/>
 
-    <TextView
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:text="@string/receipt"
-        android:textSize="40sp"/>
-
-    <!--Subtotal-->
-    <TableRow
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp">
+        android:orientation="vertical"
+        android:background="#e8e8e8"
+        android:padding="10dp"
+        android:layout_gravity="center">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/subtotal"
-            android:layout_marginRight="5dp"
-            android:layout_marginEnd="5dp"
-            android:textSize="25sp"/>
+            android:layout_marginTop="20dp"
+            android:text="@string/receipt"
+            android:textSize="40sp"/>
 
-        <TextView
-            android:id="@+id/subtotal_show"
+        <!--Subtotal-->
+        <TableRow
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:textSize="25sp"/>
-    </TableRow>
+            android:layout_marginTop="20dp">
 
-    <!--Tip-->
-    <TableRow
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/subtotal"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+                android:textSize="25sp"/>
 
-        <TextView
+            <TextView
+                android:id="@+id/subtotal_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="25sp"/>
+        </TableRow>
+
+        <!--Tip-->
+        <TableRow
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/tip"
-            android:layout_marginRight="5dp"
-            android:layout_marginEnd="5dp"
-            android:textSize="25sp"/>
+            android:layout_marginTop="20dp">
 
-        <TextView
-            android:id="@+id/tip_show"
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/tip"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:id="@+id/tip_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="25sp"/>
+        </TableRow>
+
+        <!--Total-->
+        <TableRow
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:textSize="25sp"/>
-    </TableRow>
+            android:layout_marginTop="20dp">
 
-    <!--Total-->
-    <TableRow
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/total"
+                android:textSize="25sp"/>
 
-        <TextView
+            <TextView
+                android:id="@+id/grand_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="25sp"/>
+        </TableRow>
+
+        <!--Per person-->
+        <TableRow
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/total"
-            android:textSize="25sp"/>
+            android:layout_marginTop="20dp">
 
-        <TextView
-            android:id="@+id/grand_total"
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/per"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:id="@+id/num_ppl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="25sp"/>
+        </TableRow>
+
+        <!--Tip Each-->
+        <TableRow
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:textSize="25sp"/>
-    </TableRow>
+            android:layout_marginTop="20dp">
 
-    <!--Per person-->
-    <TableRow
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/tip"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+                android:textSize="25sp"/>
 
-        <TextView
+            <TextView
+                android:id="@+id/tip_each"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="25sp"/>
+        </TableRow>
+
+        <!--Total Each-->
+        <TableRow
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/per"
-            android:textSize="30sp"/>
+            android:layout_marginTop="20dp">
 
-        <TextView
-            android:id="@+id/num_ppl"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:textSize="25sp"/>
-    </TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/total"
+                android:textSize="25sp"/>
 
-    <!--Tip Each-->
-    <TableRow
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp">
+            <TextView
+                android:id="@+id/total_each"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="25sp"/>
+        </TableRow>
+    </LinearLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/tip"
-            android:layout_marginRight="5dp"
-            android:layout_marginEnd="5dp"
-            android:textSize="25sp"/>
-
-        <TextView
-            android:id="@+id/tip_each"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:textSize="25sp"/>
-    </TableRow>
-
-    <!--Total Each-->
-    <TableRow
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/total"
-            android:textSize="25sp"/>
-
-        <TextView
-            android:id="@+id/total_each"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:textSize="25sp"/>
-    </TableRow>
 
     <Button
         android:id="@+id/clear_button"
