@@ -97,7 +97,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="#f0ffff"
+        android:background="#b2beb5"
         android:padding="10dp"
         android:layout_gravity="center">
 
