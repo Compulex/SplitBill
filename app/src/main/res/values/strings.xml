@@ -13,4 +13,12 @@
     <string name="total"><b>Total: </b></string>
     <string name="per">Per Person </string>
     <string name="clear_btn">Clear</string>
+
+    <!--Dialog-->
+    <string name="update">Update</string>
+    <string name="update_msg">
+        Version Date: February 28, 2022\n
+        <a href="https://appsbyanl.herokuapp.com/">Check for Update</a>
+    </string>
+    <string name="dismiss_btn">Dismiss</string>
 </resources>

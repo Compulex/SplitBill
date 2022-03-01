@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#72a0c1"
     tools:context=".MainActivity">
 
     <TableRow
@@ -96,7 +97,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="#e8e8e8"
+        android:background="#f0ffff"
         android:padding="10dp"
         android:layout_gravity="center">
 

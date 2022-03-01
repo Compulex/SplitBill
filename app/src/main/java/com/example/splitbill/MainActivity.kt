@@ -3,10 +3,13 @@ package com.example.splitbill
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
     private lateinit var subtotal : EditText
@@ -40,7 +43,21 @@ class MainActivity : AppCompatActivity() {
         totalEach = findViewById(R.id.total_each)
         clearBtn = findViewById(R.id.clear_button)
 
-        calcBtn.setOnClickListener { calculate() }
+        calcBtn.setOnClickListener {
+            when {
+                subtotal.text.toString() == "" -> {
+                    Toast.makeText(applicationContext, "Enter a number", Toast.LENGTH_SHORT).show()
+                }
+                tipPercent.text.toString() == "" -> {
+                    Toast.makeText(applicationContext, "If no tip, put 0", Toast.LENGTH_SHORT).show()
+                }
+                ppl.text.toString() == "" -> {
+                    Toast.makeText(applicationContext, "Enter a number", Toast.LENGTH_SHORT).show()
+                }
+                else -> calculate()
+            }
+        }
+
         clearBtn.setOnClickListener {
             //clear all
             subtotal.setText("")
@@ -54,7 +71,19 @@ class MainActivity : AppCompatActivity() {
             tipEach.text = ""
             totalEach.text = ""
         }
-    }
+    }//onCreate
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.main, menu)
+        return true
+    }//onCreateOptionsMenu
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+            R.id.menu_update -> UpdateDialog().show(supportFragmentManager, "update")
+        }
+        return super.onOptionsItemSelected(item)
+    }//onOptionsItemSelected
 
     private fun calculate(){
         val sub = subtotal.text.toString().toDouble()
